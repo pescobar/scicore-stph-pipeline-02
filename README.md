@@ -10,18 +10,16 @@ star==2.7.5b
 htseq==0.12.4
 ```
 
-## Downloading the container with Singularity (latest)
-
-   `$> singularity pull "scicore-stph-pipeline-02.sif" docker://pescobar/scicore-stph-pipeline-02:latest`
-
 ## Downloading the container with Singularity (specific version)
 
-   `$> singularity pull "scicore-stph-pipeline-02-0.0.1.sif" docker://pescobar/scicore-stph-pipeline-02-0.0.1`
+Check the available versions in the [Tags tab](https://hub.docker.com/r/pescobar/scicore-stph-pipeline-02/tags)
+
+   `$> singularity pull scicore-stph-pipeline-02-release-0.0.1.sif docker://pescobar/scicore-stph-pipeline-02:release-0.0.1`
 
 ## Using the container with singularity
 
-   `$> singularity exec scicore-stph-pipeline-02-0.0.1.sif STAR --help`
+   `$> singularity exec scicore-stph-pipeline-02-release-0.0.1.sif STAR --help`
 
 ## Interactive shell inside the container with singularity
 
-   `$> singularity shell scicore-stph-pipeline-02-0.0.1.sif`
+   `$> singularity shell scicore-stph-pipeline-02-release-0.0.1.sif`
